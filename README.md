@@ -7,4 +7,4 @@
 
 
 ## 참고 자료
-*
+* [Git Branch 입문](https://backlog.com/git-tutorial/kr/stepup/stepup2_3.html)
