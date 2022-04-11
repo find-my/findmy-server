@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+env:
+
+spring:
+  profiles:
+    active: dev
