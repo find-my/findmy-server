@@ -23,7 +23,10 @@
     2. 테이블 생성
     3. Spring JDBC 연결
 
-
+### 2. Entity 생성
+* JPA Auditing
+  * createdAt, updatedAt 자동화
+  * 단순, 반복적인 코드 해결
 ## 추가 링크
 * [참고 자료 폴더](https://github.com/find-my/findmy-server/tree/main/artifacts/docs_supports)
 * [프로젝트 관리 문서](https://github.com/find-my/findmy-server/tree/main/artifacts/docs_managements)
