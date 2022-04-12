@@ -35,7 +35,7 @@
   * `setter`, `생성자` 말고 빌더 패턴 사용이 용이
 
 
-* `연관관계 매핑`
+* 연관관계 매핑
   * N : 1
     * `@JoinColumn(name = "mapping 이름"` 
     * 양방향은 외래 키가 있는 쪽이 연관관계 주인(N)
@@ -48,7 +48,7 @@
     * 매핑 시 `new ArrayList<>()` 추가 -> NPE 방지
   
 
-* `CASCADE 종류`
+* CASCADE 종류
   ```java
   public enum CascadeType{
     ALL, // 모두 적용
@@ -73,6 +73,11 @@
 * User Table PK `email`로 지정하지 않는 이유
   * 사용자가 탈퇴 시, 정보를 삭제할 것인지 보관할 것인지 취급 문제
   * 보통 겹치지 않는 난수를 사용하기도 함
+
+
+* Test 코드
+  * given, when, then 절
+  * 어떻게 하는거지..
 ## 추가 링크
 * [참고 자료 폴더](https://github.com/find-my/findmy-server/tree/main/artifacts/docs_supports)
 * [프로젝트 관리 문서](https://github.com/find-my/findmy-server/tree/main/artifacts/docs_managements)

@@ -4,6 +4,7 @@ import com.example.findmy.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 
@@ -17,12 +18,15 @@ class BaseTimeEntityTest {
     private UserRepository userRepository;
 
     @Test
+    @Transactional
     void BaseTimeTest() {
         // given
         LocalDateTime now = LocalDateTime.now();
 
-        User user = new User();
-        user.setEmail("lee");
+        User user = new User().builder()
+                .email("lee")
+                .phone("123")
+                .build();
 
         User testUser = userRepository.save(user);
 
