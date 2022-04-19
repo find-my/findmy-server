@@ -1,5 +1,6 @@
 package com.example.findmy.domain;
 
+import com.example.findmy.domain.enums.PostType;
 import lombok.*;
 
 import javax.persistence.*;
